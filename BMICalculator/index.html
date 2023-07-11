@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+        <div class="top">
+            <img src="img/BMICLogo.png" alt="BMICalculator"/>
+            <div class="data">
+                <p>身高 cm</p>
+                <input id="height" type="text" placeholder="請輸入身高"/>
+                <p>體重 kg</p>
+                <input id="weight" type="text" placeholder="請輸入體重"/>
+                <div class="warning" id="warning">請輸入正確的格式(非空白、數字)</div>
+            </div>   
+            <div class="calculate" id="calculate">
+                <div class="result"><strong>看結果</strong></div>
+            </div>
+        </div>
+        <div class="middle">
+            <h3>BMI紀錄</h3>
+            <div id="list">
+            </div>
+        </div>
+        <div class="bottom">
+            <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/BMICLogo.png">
+        </div>
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
